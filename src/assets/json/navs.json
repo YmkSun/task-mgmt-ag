@@ -1,0 +1,8 @@
+[
+    {"item":"Ad Creation","link":"ads-creation","desc":"","selected":false,"icon":"fa fa-puzzle-piece","navs":[
+        {"item":"Engagment","link":"campaign-engagement","desc":"","selected":false,"icon":"","navs":[]},
+        {"item":"Reach","link":"campaign-reach","desc":"","selected":false,"icon":"","navs":[]},
+        {"item":"Click","link":"campaign-click","desc":"","selected":false,"icon":"","navs":[]}
+    ]},
+    {"item":"Report","link":"ads-report","desc":"","selected":false,"icon":"fa fa-file-text","navs":[]}
+]
