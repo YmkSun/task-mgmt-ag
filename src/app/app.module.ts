@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 declare var jQuery: any;
 declare var $: any;
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', loadChildren: './components/login/login.module#LoginModule' }
+];
 
 @NgModule({
   declarations: [
