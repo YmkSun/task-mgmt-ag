@@ -1,6 +1,20 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<app-head-menu *ngIf="_showHeader" [sidebar]="_showSidebar" [srchBar]="_showSrchBar" (srchChanged)="handleSrch($event)"></app-head-menu>
+<flash-messages></flash-messages>
+<div class="clearfix"> </div>
+<div [class.page-container]='!_login'>
+    <div [class.page-content-wrapper]='!_login'>
+        <app-sidebar-menu *ngIf="_showSidebar"></app-sidebar-menu>
+        <div [class.page-content]='!_login' [class.page-without-sidebar]="!_showSidebar">
+           
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>
-<router-outlet></router-outlet>
+<app-footer *ngIf='!_login'></app-footer>
+
+<!-- Modal -->
+<div class="modal fade" id="loaderModal" role="dialog">
+    <div class="modal-body">
+        <img class="loader-img" src="./loader.gif">
+    </div>
+</div>

@@ -1,0 +1,110 @@
+.page-without-sidebar {
+    margin-left: 0px !important;
+    width: 100% !important;
+}
+
+.portlet-title .caption .page-breadcrumb > li > a, .portlet-title .caption .page-breadcrumb > li > span {
+    color: #888;
+    font-size: 18px;
+    text-shadow: none;
+}
+
+.portlet-title .title {
+    width: 100%;
+}
+
+.portlet-input {
+    width: 100%;
+    input {
+        padding-left: 30px;
+    }
+}
+
+#user-btn {
+    font-size: 25px;
+    color: #888;
+    padding: 5px;
+    text-align: right;
+    display: none;
+    img {
+        width: 30px;
+    }
+    i {
+        margin-top: 10px;
+    }
+}
+
+.modal {
+    margin-top: 70px;
+}
+
+#conv-list {
+    display: block;
+}
+
+.caption-add-btn {
+    margin-left: 5px;
+}
+
+#caption-add-btn {
+    display: none;
+}
+
+.page-breadcrumb li span {
+    float: left;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+
+    #user-info {
+        display: none;
+    }
+
+    #user-btn {
+        width: 40%;
+        display: block;
+    }
+
+    .portlet-title .title {
+        width: 60%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+
+    #user-btn {
+        img {
+            width: 25px;
+        }
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    #conv-list {
+        display: none;
+    }
+
+    #caption-add-btn {
+        display: block;
+    }
+
+    .page-header.navbar {
+        height: 68px;
+    }
+
+    .page-header.navbar .page-top {
+        display: none;
+    }
+}
+
+.loader-img {
+    width:  100px;
+    height: 100px;
+}
+
+#loaderModal {
+    margin-top: 250px;
+    margin-left: 45%;
+}

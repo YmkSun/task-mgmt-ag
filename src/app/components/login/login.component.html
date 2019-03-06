@@ -1,5 +1,36 @@
-<div style="text-align:center">
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
+
+<div class="login">
+  <div class="content">
+
+      <form class="login-form" method="post" novalidate="novalidate" _lpchecked="1">
+
+          <div class="alert alert-danger display-hide">
+              <button class="close" data-close="alert"></button>
+              <span>
+                  <i class="fa fa-warning"></i> Please enter login information
+              </span>
+          </div>
+
+         
+              <h3 class="form-title">Login</h3>
+              <p><!--Login with your <a href="http://forum.aspnetboilerplate.com/" target="_blank" style="color: red;">forum</a> user name and password.--></p>
+
+              <input type="hidden" name="Referrer" value="">
+              <input type="hidden" name="ClientId" value="">
+
+              <div class="form-group">
+                  <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                  <label class="control-label visible-ie8 visible-ie9">User name or email</label>
+                  <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="User name or email" name="usernameOrEmailAddress" value="" required="" aria-required="true" [(ngModel)]="login.email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+              </div>
+              <div class="form-group">
+                  <label class="control-label visible-ie8 visible-ie9">Password</label>
+                  <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" [(ngModel)]="login.password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+              </div>               
+              <div class="form-actions">
+                  <button type="button" (click)="userLogin()" class="btn btn-success uppercase">Login</button>
+              </div>
+                  
+      </form>
   </div>
+</div>

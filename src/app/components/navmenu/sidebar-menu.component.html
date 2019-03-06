@@ -1,0 +1,25 @@
+<div class="page-sidebar-wrapper">
+    <div class="page-sidebar navbar-collapse collapse">
+        <ul id="side-bar-menu" class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start" *ngFor="let menu of _navs;let num = index">
+                <a [routerLink]="[menu.link]" class="nav-link nav-toggle" (click)="setClicked(num)">
+                    <i *ngIf="menu.icon!=''" class={{menu.icon}}></i>
+                    <span class="title">{{menu.item}}</span>
+                    <!--span class="selected"></span-->
+                    <span class="arrow open"></span>
+                </a>
+                <ul id="side-bar-submenu" class="sub-menu" *ngIf="menu.navs.length>0">
+                    <li class="nav-item start" *ngFor="let submenu of menu.navs;let chNum = index">
+                        <a class="nav-link " (click)="setChildClicked(num,chNum)">
+                            <i class="icon-bar-chart"></i>
+                            <span class="title">{{submenu.item}}</span>
+                            <!--span class="selected"></span-->
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
