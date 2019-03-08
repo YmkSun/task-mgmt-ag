@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Login } from './login';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   title = 'login';
+  login: Login;
+
+  constructor() {
+    this.login = new Login();
+  }
 }
