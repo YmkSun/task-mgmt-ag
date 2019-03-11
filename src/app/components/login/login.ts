@@ -1,6 +1,6 @@
 export class Login {
-    private id: String;
-    private password: String;
+    public id: string;
+    public password: string;
     public constructor() {
         this.id = '';
         this.password = '';
