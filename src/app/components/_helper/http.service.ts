@@ -17,7 +17,7 @@ export class HttpService {
         var params = JSON.stringify(j);
         var headers = new HttpHeaders({ 'Content-Type': 'application/json' });
         return this.http.post<any>(this.apiurl + url, params, { headers: headers }).pipe(
-            tap((res: Response) => res.json()),
+            tap((res: Response) => res),
             catchError(this.handleError('post'))
         );
     }
@@ -25,7 +25,7 @@ export class HttpService {
         var params = JSON.stringify(j);
         var headers = new HttpHeaders({ 'Content-Type': 'application/json' });
         return this.http.put(this.apiurl + url, params, { headers: headers }).pipe(
-            tap((res: Response) =>  res.json()),
+            tap((res: Response) =>  res),
             catchError(this.handleError('put'))
         );
     }
@@ -35,13 +35,12 @@ export class HttpService {
             fd.append(e.name, e.value);
         });
         return this.http.post(this.apiurl + url, fd).pipe(
-            tap((res: Response) =>  res.json()),
+            tap((res: Response) =>  res),
             catchError(this.handleError('post'))
         );
     } 
     handleError<T>(operation = 'operation', result?: T) {
         return (error: any): Observable<T> => {
-            console.error(error);
             this.log(`${operation} failed: ${error.message}`);
             return of(result as T);
         };

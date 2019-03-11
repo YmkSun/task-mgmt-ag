@@ -1,0 +1,255 @@
+<!-- BEGIN PAGE HEADER-->
+<h3 class="page-title">
+    Dashboard
+    <small>dashboard & statistics</small>
+</h3>
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <i class="icon-home"></i>
+            <a href="index.html">Home</a>
+            <i class="fa fa-angle-right"></i>
+        </li>
+        <li>
+            <span>Dashboard</span>
+        </li>
+    </ul>
+    <div class="page-toolbar">
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000"
+                data-close-others="true">
+                Actions
+                <i class="fa fa-angle-down"></i>
+            </button>
+            <ul class="dropdown-menu pull-right" role="menu">
+                <li>
+                    <a href="#">
+                        <i class="icon-bell"></i> Action
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-shield"></i> Another action
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-user"></i> Something else here
+                    </a>
+                </li>
+                <li class="divider"> </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-bag"></i> Separated link
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- END PAGE HEADER-->
+
+<div class="row">
+    <div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>APPROVED ORDERS</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.approvedOrdersCount}}</span>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>RUNNING ORDER COUNT</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.runningOrdersCount}}</span>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>IMPRESSIONS</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.impressionsCount}}</span>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>CLICKS</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.clickCount}}</span>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>LIKES</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.likeCount}}</span>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>COMMENTS</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.commentCount}}</span>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="dashboard-stat2 ">
+                <div class="display">
+                    <div class="number">
+                        <small>AMOUNT SPENT</small>
+                        <h3 class="font-green-sharp">
+                            <span data-counter="counterup">{{dashboardObj.amountSpent}}</span>
+                            <small class="font-green-sharp">$</small>
+                        </h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-info-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-sm-6">
+        <!-- BEGIN PORTLET-->
+        <div class="portlet light ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-bar-chart font-green"></i>
+                    <span class="caption-subject font-green bold uppercase">Site Visits</span>
+                    <span class="caption-helper">weekly stats...</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group btn-group-devided" data-toggle="buttons">
+                        <label class="btn red btn-outline btn-circle btn-sm active">
+                            <input type="radio" name="options" class="toggle" id="option1">New
+                        </label>
+                        <label class="btn red btn-outline btn-circle btn-sm">
+                            <input type="radio" name="options" class="toggle" id="option2">Returning
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="dbox">
+                <div class="body" id="pie"></div>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+    </div>
+    <div class="col-md-6 col-sm-6">
+        <div class="portlet light ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-cursor font-purple"></i>
+                    <span class="caption-subject font-purple bold uppercase">General Stats</span>
+                </div>
+                <div class="actions">
+                    <a href="javascript:;" class="btn btn-sm btn-circle red easy-pie-chart-reload">
+                        <i class="fa fa-repeat"></i> Reload
+                    </a>
+                </div>
+            </div>
+            <div class="dbox">
+                <div class="body" id="bar"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-sm-6">
+        <div class="portlet light ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-share font-blue"></i>
+                    <span class="caption-subject font-blue bold uppercase">Recent Activities</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group">
+                        <a class="btn btn-sm blue btn-outline btn-circle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            Filter By
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+                            <label>
+                                <input type="checkbox" /> Finance
+                            </label>
+                            <label>
+                                <input type="checkbox" checked="" /> Membership
+                            </label>
+                            <label>
+                                <input type="checkbox" /> Customer Support
+                            </label>
+                            <label>
+                                <input type="checkbox" checked="" /> HR
+                            </label>
+                            <label>
+                                <input type="checkbox" /> System
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dbox">
+                <div class="body" id="line"></div>
+            </div>
+        </div>
+    </div>
+</div>

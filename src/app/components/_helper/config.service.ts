@@ -13,7 +13,7 @@ export class ConfigService {
 
     load(): Promise<void> {
         let self = this;
-        const promise = this._http.get('../../assets/json/navs.json').toPromise().then(keys => { this._data._navs = keys; }).catch(reasons => { console.log(reasons)});
+        const promise = this._http.get('assets/json/navs.json').toPromise().then(keys => { this._data._navs = keys; }).catch(reasons => { console.log(reasons)});
         return promise;
     }
 

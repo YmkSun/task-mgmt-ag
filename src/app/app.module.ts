@@ -22,7 +22,8 @@ import * as jQuery from 'jquery';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', loadChildren: './components/login/login.module#LoginModule' }
+  { path: 'login', loadChildren: './components/login/login.module#LoginModule' },
+  { path: 'dashboard', loadChildren: './components/dashboard/dashboard.module#DashboardModule' }
 ];
 
 @NgModule({

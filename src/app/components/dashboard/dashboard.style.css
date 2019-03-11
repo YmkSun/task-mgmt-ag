@@ -1,0 +1,20 @@
+.page-bar {
+    height: 40px;
+}
+.dashboard-stat2 {
+    padding: 15px 15px 10px;    
+}
+.dashboard-stat2 .display .icon>i {
+    color: #cbd4e0;
+    font-size: 22px;
+}
+.dashboard-stat2 .display .number small {
+    font-weight: lighter !important;
+    color: #00ccee !important;
+}
+.dbox {
+    max-width: fit-content !important;
+    max-height: fit-content !important;
+    width: inherit;
+    height: auto;
+}
