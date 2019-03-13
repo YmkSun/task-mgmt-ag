@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 0px; /* .push must be the same height as .footer */ 
+}
+.tblborder th {
+    border-top : 2px solid #ddd !important;
+ }
+.sorter{
+    color : black;
+    font-size:10px;
+    text-align : right center; 
+}
+
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-container.card {
+    max-width: 320px;
+    padding: 25px 25px;
+}
+
+.close-btn {
+    margin-bottom:3px;
+    height: 28px; 
+    width: 28px;
+    background-color: rgb(59, 89, 152);
+    border-radius: 15px;
+    cursor: pointer
+}
+
+.touch-ui{
+    background-color: #ffffff !important;
+}
+
+.selectedTextBox{
+    background-color: #b2f9d8 !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@-moz-document url-prefix() {
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+   /*  input[type="number"]:focus {
+        -moz-appearance: number-input;
+        padding-right:0px;
+    } */
+}
+
+.pagination .page-item .page-link,.glyphicon-calendar,.clickable{
+    cursor: pointer;
+}
+
+legend,.form-group{
+    margin-bottom: 10px !important;
+}
+.pagination{
+    margin: 5px 0 !important;
+}
+
+.change{
+    color:red !important;
+}
+
+.key{
+    float: left;
+    border: 1px solid #908B8B;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 1px;
+}
+.num_text{
+	margin-bottom: 5px;
+	text-align:center;
+	font-size:18px !important;
+	background-color:#fff !important;
+}
+.numwrap{
+    float: left;
+    margin-left: 2px;
+    width: 100%;
+}
+.keywrap1,.keywrap4{
+	float:left;
+	margin-left:2px;
+	width:100%;
+}
+.keywrap2{
+	float:left;
+	width:100%;
+	margin-left:2px;
+}
+.keylg{
+	float:left;
+	width:100%;
+	margin-left:2px;
+}
+.keywrap3{
+	float: left;
+    width:100%;
+    margin-left:2px;
+}
+.delete, .ok{
+	float: left;
+    border: 1px solid #908B8B;
+    width: 9.8%;
+    height: 50px;
+    text-align: center;
+    margin: 1px;
+	background: #337AB7;
+	color:#fff;
+}
+.delete > img, .ok > i{
+   line-height: 50px;
+}
+.delete > img{
+    margin-top: 10%;
+}
+
+@media (min-width: 1004px){
+    .num-style48{
+        width : 4.8%;
+    }
+
+    .num-style98{
+        width : 9.8%;
+    }
+
+    .num-style148{
+        width : 14.8%;
+    }
+
+     .num-style297{
+        width : 29.7%;
+    }
+}
+
+@media (min-width: 678px) and (max-width: 1003px){
+    .num-style48{
+        width : 4.7%;
+    }
+
+    .num-style98{
+        width : 9.7%;
+    }
+
+    .num-style148{
+        width : 14.7%;
+    }
+
+     .num-style297{
+        width : 29.7%;
+    }
+}
+
+@media (max-width: 677px){
+    .num-style48{
+        width : 4.5%;
+    }
+
+    .num-style98{
+        width : 9.5%;
+    }
+
+    .num-style148{
+        width : 14.5%;
+    }
+
+     .num-style297{
+        width : 29.5%;
+    }
+}
+
+@media (max-width: 408px){
+    .num-style48{
+        width : 4.1%;
+    }
+
+    .num-style98{
+        width : 9%;
+    }
+
+    .num-style148{
+        width : 14%;
+    }
+
+    .num-style297{
+        width : 28.8%;
+    }
+}
+
+.keypad_wrapper{
+    width: 220px;
+    position: fixed;
+    top: 30%;
+    background: #fff;
+    z-index: 2000;
+    display: block;
+    left: 50%;
+    margin-left: -100px;
+    -webkit-box-shadow: 0px 0px 10px green;
+    -moz-box-shadow: 0px 0px 10px green;
+    box-shadow: 0px 0px 5px green;
+}
+
+.select_control{
+       border-radius:3px!important;
+}
+
+.col-1 {
+    width: 90%!important;
+}
+
+.besite-mg{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+@media (max-width: 991px){
+    .dtowidth{
+        padding-bottom:8px;
+    }
+    .col-1 {
+        width: 100%!important;
+    }
+}
+
+.login{
+    margin-left : 0px!important;
+}
+
+.show-left-menu{
+    display : none;
+}
+

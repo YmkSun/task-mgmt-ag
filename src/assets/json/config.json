@@ -1,0 +1,6 @@
+{
+	"app" : "IRDC",
+	"ver" : "1.0.1",
+	"title" : "IRDC",
+	"apiurl" : "http://localhost:8080/iRDC/"
+}

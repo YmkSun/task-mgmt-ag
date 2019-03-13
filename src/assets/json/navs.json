@@ -1,0 +1,11 @@
+[
+    {"_link":"/dashboard", "_description":"Dashboard", "_logo":"fa fa-tachometer"},
+    {"_link":"", "_description":"Setup", "_logo":"fa fa-files-o", "_navs":[
+        {"_link":"/nationality", "_description":"Nationality"},
+        {"_link":"/loanOfficer", "_description":"Loan Officer"}
+    ]},
+    {"_link":"", "_description":"System", "_logo":"fa fa-cog", "_navs":[
+        {"_link":"/user", "_description":"User"}
+    ]}
+
+]

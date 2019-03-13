@@ -1,0 +1,98 @@
+ /*#####################navigation panel with lpanel-bg3 theme Color Start################*/
+
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel {
+    background: #485bbd none repeat scroll 0 0;
+    color: #e7e7e7;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .profile-box {
+    border-bottom: 1px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .profile-box {
+    border-bottom: 0px;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .profile-box .media a > img {
+    border: 1px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li > a {
+    background: #485bbd;
+    border-top: 1px solid #576acc;
+    color: #e7e7e7;
+	border-right: 1px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li:last-child > a {
+    border-bottom: 1px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li:first-child > a {
+    border-top: 0px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li > a:hover,
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li > a:focus {
+    color: #FFF;
+    background: #3c4fb1;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li.active > a {
+    background: #3c4fb1;
+    border-top: 1px solid #576acc;
+    color: #FFF;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list > li.hoe-has-menu.opened > a {
+    background: #485bbd;
+    color: #e7e7e7;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list ul {
+    background: #485bbd;
+    box-shadow: -1px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list ul.hoe-sub-menu li > a {
+    background: #485bbd;
+    border-top: 1px solid #4659bb;
+    color: #e7e7e7;
+}
+
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list ul.hoe-sub-menu li.active > a {
+    background: #3c4fb1;
+}
+
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list li.hoe-has-menu > ul.hoe-sub-menu li > a:hover,
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list li.hoe-has-menu > ul.hoe-sub-menu li > a:focus {
+    color: #FFF;
+    background: #2b3ea0;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list li.active > a .selected {
+    border-right: 7px solid #FFF;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .panel-list li a .label {
+    color: #e7e7e7;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] .sul {
+    background-color: #3043a5;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel {
+    background: #485bbd;
+    color: #e7e7e7;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .panel-list > li.hoe-has-menu:hover > a,
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .panel-list > li.hoe-has-menu:focus > a {
+    border-radius: 0px 4px 0px 0px;
+    background: #3c4fb1;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .panel-list > li.hoe-has-menu.opened > a {
+    background: #485bbd;
+    color: #e7e7e7;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .panel-list > li.hoe-has-menu.opened > a:hover {
+    background: #3c4fb1;
+    color: #FFF;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .panel-list > li.hoe-has-menu:hover > ul.hoe-sub-menu,
+#hoeapp-container[hoe-color-type="lpanel-bg3"].hoe-minimized-lpanel #hoe-left-panel .panel-list > li.hoe-has-menu:focus > ul.hoe-sub-menu {
+    border-right: 1px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .nav-level {
+    border-top: 1px solid #576acc;
+}
+#hoeapp-container[hoe-color-type="lpanel-bg3"] #hoe-left-panel .nav-level:first-child {
+    border-top: 0px solid #576acc;
+}
+/*#####################navigation panel with lpanel-bg3 theme Color close*################*/
